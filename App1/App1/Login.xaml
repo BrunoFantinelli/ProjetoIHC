@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Login">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry Placeholder="Login" x:Name="CampoLogin"/>
+            <Entry Placeholder="Senha" IsPassword="True"   x:Name="CampoSenha"/>
+            <Button Text="Login" Clicked="MudarPaginaInicial"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
