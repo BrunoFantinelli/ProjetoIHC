@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.PaginaPrincipal"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+  <!--Pages can be added as references or inline-->
+    
+    <!--Tela de Compras-->
+    <ContentPage Title="Compras" >
+        <StackLayout>
+            
+            <!--Atalhos-->
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center"
+                         Orientation="Horizontal">
+
+                <Button Text="Café" Clicked="MudarTelaNovoItem"/>
+                <Button Text="Restaurante" Clicked="MudarTelaNovoItem"/>
+                <Button Text="Roupas" Clicked="MudarTelaNovoItem"/>
+                <Button Text="Jogos" Clicked="MudarTelaNovoItem"/>
+            <!--<ImageButton Source="icon_cafe.png"  ScaleX="0.25" ScaleY="0.25" />
+            <ImageButton Source="icon_mercado.png" ScaleX="0.25" ScaleY="0.25" />
+            <ImageButton Source="icon_restaurante.png" ScaleX="0.25" ScaleY="0.25"/>
+            <ImageButton Source="icon_roupa.png"  ScaleX="0.25" ScaleY="0.25"/>
+            -->
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center"
+                         Orientation="Horizontal">
+
+                <Label Text="Hoje:"/>
+                <Button Text="Config" Clicked="MudarTelaNovoConfig" VerticalOptions="End"/>
+
+            </StackLayout>
+
+            <!-- Lista de itens -->
+            <ScrollView>
+            <StackLayout>
+                <Label Text="Café           R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Hotel          R$ 50,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 35,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Roupas         R$ 150,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Jogos          R$ 200,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Café           R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Computador     R$ 100,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            </ScrollView>
+            <!-- Botão Adicionar -->
+            <StackLayout>
+                <Button Text="Adicionar Item"  HorizontalOptions="FillAndExpand" Clicked="MudarTelaNovoItem"/>
+            </StackLayout>
+            </StackLayout>
+    </ContentPage>
+
+
+    <!--Tela do Calendário-->
+    <ContentPage Title="Calendário">
+        <ScrollView>
+            <StackLayout>
+
+            <StackLayout>
+                <Label Text="Data de:" HorizontalOptions="CenterAndExpand"/>
+                <DatePicker HorizontalOptions="CenterAndExpand"></DatePicker>
+                <Label Text="Até" HorizontalOptions="CenterAndExpand"/>
+                <DatePicker HorizontalOptions="CenterAndExpand"></DatePicker>
+                <Image Source="grafic_sample.jpg"/>
+            </StackLayout>
+                <ScrollView>
+            <StackLayout>
+                <Label Text="Histórico de Compras"/>
+                <Label Text="Café           R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Hotel          R$ 50,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 35,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Roupas         R$ 150,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Jogos          R$ 200,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Café           R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Restaurante    R$ 2,00" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+
+    <!--Tela de Dicas-->
+    <ContentPage Title="Dicas">
+        <StackLayout>
+            <Label Text="Você está gastando muito em restaurantes, talvez seja melhor almoçar em casa mais." x:Name="campoDica" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Nova Dica" VerticalOptions="EndAndExpand" Clicked="novaDica"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Label Text="Bem Vindo ao NumGastaMano"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"/>
+        <Label Text="Login:"/>
+        <Button Text="Google" Clicked="MudarTelaLoginApp"/>
+        <Button Text="Facebook" Clicked="MudarTelaLoginApp"/>
+        <Button Text="Conta do App" Clicked="MudarTelaLoginApp"/>
+        <Label Text="Não tem conta?"/>
+        <Button Text="Cadastrar" Clicked="MudarTelaCadastro"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="App1.Config"
+             Title="Configurações">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout>
+            <input:CheckBox Text="Som do Toque" Type="Box" HorizontalOptions="StartAndExpand" />
+            <input:CheckBox Text="Tema Escuro" Type="Box" HorizontalOptions="StartAndExpand"  />
+            <Picker HorizontalOptions="FillAndExpand" Title="Tipo de Moeda">
+                <Picker.Items>
+                    <x:String>Real</x:String>
+                    <x:String>Dolar</x:String>
+                    <x:String>Euro</x:String>
+                    <x:String>Libra</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <Picker HorizontalOptions="FillAndExpand" Title="Idioma">
+                <Picker.Items>
+                    <x:String>Português</x:String>
+                    <x:String>Inglês</x:String>
+                    <x:String>Espanhol</x:String>
+                    <x:String>Francês</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center"
+                         Orientation="Horizontal">
+                <Button Text="Log Out" Clicked="OnAlertYesNoClicked"/>
+                <Button Text="Reportar" Clicked="irReport"/>
+            </StackLayout>
+            <Button Text="Voltar" HorizontalOptions="CenterAndExpand" Clicked="voltarTela"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
